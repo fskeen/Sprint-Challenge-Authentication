@@ -10,8 +10,8 @@ module.exports = (req, res, next) => {
 
     if (token) {
         jwt.verify(token, secrets.jwtSecret, (err, decodedToken) => {
-          console.log('TOKEN ------- ', token)
-          console.log('JWTSECRET ------- ', secrets.jwtSecret)
+          // console.log('TOKEN ------- ', token)
+          // console.log('JWTSECRET ------- ', secrets.jwtSecret)
           console.log('DECODEDTOKEN ------- ', decodedToken)
           console.log('err ------- ', err)
             if (err) {
