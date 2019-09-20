@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 const secrets = require('../config/secrets')
+const restricted = require('./authenticate-middleware')
 
 router.post('/register', (req, res) => {
   let account = req.body;
